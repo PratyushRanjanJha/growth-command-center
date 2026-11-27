@@ -1,0 +1,21 @@
+/* Internal ops tool: light editorial canvas, hairline borders, no shadows, one cobalt accent. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:light}
+*{min-width:0}
+html,body{background:#FAFAFA}
+body{margin:0;color:#18181B;font:13px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.num,td,th,input,select{font-variant-numeric:tabular-nums}
+.label{font-size:11px;line-height:16px;text-transform:uppercase;letter-spacing:.05em;color:#71717A;font-weight:500}
+input,select,textarea{font-size:16px;background:#fff;color:#18181B;border:1px solid #E4E4E7;border-radius:6px;height:30px}
+textarea{height:auto}
+select{padding-right:22px}
+input:hover,select:hover{border-color:#D4D4D8}
+input:disabled{background:#F4F4F5;color:#A1A1AA}
+@media(min-width:900px){input,select,textarea{font-size:13px}}
+:focus-visible{outline:2px solid #1D4ED8;outline-offset:1px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#1D4ED8;box-shadow:0 0 0 3px #1D4ED81a}
+.recharts-text{fill:#71717A;font-variant-numeric:tabular-nums}
+.recharts-cartesian-axis-line,.recharts-cartesian-axis-tick-line{stroke:#E4E4E7}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
